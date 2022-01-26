@@ -3,8 +3,8 @@
 #include <driver/gpio.h>
 
 // WiFi credentials
-#define WIFI_SSID << YOUR_SSID >>
-#define WIFI_PSWD << YOUR_PASSWORD >>
+#define WIFI_SSID "AXIOM-Office"
+#define WIFI_PSWD "bismillah"
 
 // sample rate for the system
 #define SAMPLE_RATE 16000
@@ -26,7 +26,7 @@
 #define ADC_MIC_CHANNEL ADC1_CHANNEL_7
 
 // speaker settings
-#define USE_I2S_SPEAKER_OUTPUT
+// #define USE_I2S_SPEAKER_OUTPUT
 #define I2S_SPEAKER_SERIAL_CLOCK GPIO_NUM_18
 #define I2S_SPEAKER_LEFT_RIGHT_CLOCK GPIO_NUM_19
 #define I2S_SPEAKER_SERIAL_DATA GPIO_NUM_5
@@ -38,7 +38,7 @@
 
 // Which LED pin do you want to use? TinyPico LED or the builtin LED of a generic ESP32 board?
 // Comment out this line to use the builtin LED of a generic ESP32 board
-// #define USE_LED_GENERIC
+#define USE_LED_GENERIC
 
 // Which transport do you want to use? ESP_NOW or UDP?
 // comment out this line to use UDP
